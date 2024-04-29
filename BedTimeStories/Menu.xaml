@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BedTimeStories.Menu"
+             Title="القصص"
+             BackgroundColor="#002232"
+             BackgroundImageSource="vvvvv.jpg">
+    
+    <StackLayout Spacing="50" Margin="45">
+        
+        <Frame BorderColor="Tomato"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           HeightRequest="150"
+           WidthRequest="150"          
+           IsClippedToBounds="True"
+           CornerRadius="30">
+            <ImageButton x:Name="btntortue" Source="tortue.jpg" Clicked="btntortue_Clicked"
+                   HeightRequest="150" 
+                   WidthRequest="150" 
+                   HorizontalOptions="Center" 
+                   Aspect="Fill"/>
+        </Frame>
+        
+        <Frame BorderColor="DarkBlue"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            HeightRequest="150"
+            WidthRequest="150"
+            IsClippedToBounds="True"
+            CornerRadius="30">
+            <ImageButton x:Name="btngold" Source="gold2.jpg" Clicked="btngold_Clicked"
+                   HeightRequest="150" 
+                   WidthRequest="150" 
+                   HorizontalOptions="Center" 
+                   Aspect="Fill"/>  
+        </Frame>
+
+        <Frame BorderColor="Green"
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+             HeightRequest="150"
+             WidthRequest="150"            
+             IsClippedToBounds="True"
+             CornerRadius="30">
+            <ImageButton x:Name="btnloup" Source="loup.jpg" Clicked="btnloup_Clicked" 
+                   HeightRequest="150" 
+                   WidthRequest="150" 
+                   HorizontalOptions="Center" 
+                   Aspect="Fill"/>
+        </Frame>
+        
+    </StackLayout>
+    
+
+
+</ContentPage>

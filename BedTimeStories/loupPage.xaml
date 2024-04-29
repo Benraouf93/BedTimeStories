@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BedTimeStories.loupPage"
+             Title="ليلى و الذئب"
+             BackgroundColor="#001C32"
+             BackgroundImageSource="vvvvv.jpg">
+
+    <ScrollView Margin="5,180,5,200">
+
+        <StackLayout Orientation="Vertical" Spacing="320">
+
+            <Frame BackgroundColor="LightBlue" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_1.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_2.png"/>
+            </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_3.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightBlue" CornerRadius="10"  IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_4.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_5.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_6.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_7.png" />
+            </Frame>
+
+            <Frame BackgroundColor="Tomato" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_8.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightBlue" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_9.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_10.png"/>
+            </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_11.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightBlue" CornerRadius="10"  IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_12.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_13.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_14.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_15.png" />
+            </Frame>
+
+            <Frame BackgroundColor="Tomato" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_16.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightBlue" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_17.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_18.png"/>
+            </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_19.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightBlue" CornerRadius="10"  IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_20.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_21.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_22.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_23.png" />
+            </Frame>
+
+            <Frame BackgroundColor="Tomato" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_24.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_25.png" />
+            </Frame>
+
+            <Frame BackgroundColor="Tomato" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="liela_26.png" />
+            </Frame>
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

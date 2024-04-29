@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BedTimeStories.goldPage"
+             Title="الإوزة الذهبية"
+             BackgroundColor="#001C32"
+             BackgroundImageSource="vvvvv.jpg">
+
+    <ScrollView Margin="5,180,5,200">
+
+        <StackLayout Orientation="Vertical" Spacing="320">
+
+            <Frame BackgroundColor="LightBlue" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="oie_1.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="oie_2.png"/>
+            </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="oie_3.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightBlue" CornerRadius="10"  IsClippedToBounds="True" Padding="4">
+                <Image Source="oie_4.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="oie_5.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="oie_6.png" />
+            </Frame>
+            
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="oie_7.png" />
+            </Frame>
+
+            <Frame BackgroundColor="Tomato" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="oie_8.png" />
+            </Frame>
+
+        </StackLayout>
+
+    </ScrollView>
+    
+</ContentPage>

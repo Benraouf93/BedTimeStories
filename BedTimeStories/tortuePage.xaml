@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BedTimeStories.tortuePage"
+             Title="الأرنب و السلحفاة"
+             BackgroundColor="#001C32"
+             BackgroundImageSource="vvvvv.jpg">
+
+    <ScrollView Margin="5,180,5,200">
+        
+        <StackLayout Orientation="Vertical" Spacing="320">
+
+            <Frame BackgroundColor="LightBlue" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                    <Image Source="lapin_1.png" />
+                </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                    <Image Source="lapin_2.png"/>
+                </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                    <Image Source="lapin_3.png" />
+                </Frame>
+            
+            <Frame BackgroundColor="LightBlue" CornerRadius="10"  IsClippedToBounds="True" Padding="4">
+                <Image Source="lapin_4.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="lapin_5.png" />
+            </Frame>
+
+            <Frame BackgroundColor="LightYellow" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="lapin_6.png" />
+            </Frame>
+
+            <Frame BackgroundColor="Tomato" CornerRadius="10" IsClippedToBounds="True" Padding="4">
+                <Image Source="lapin_7.png" />
+            </Frame>
+
+        </StackLayout>
+         
+    </ScrollView>
+
+
+</ContentPage>

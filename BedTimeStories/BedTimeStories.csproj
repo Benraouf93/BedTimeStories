@@ -1,0 +1,133 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
+
+		<!-- Note for MacCatalyst:
+		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
+		When specifying both architectures, use the plural <RuntimeIdentifiers> instead of the singular <RuntimeIdentifier>.
+		The Mac App Store will NOT accept apps with ONLY maccatalyst-arm64 indicated;
+		either BOTH runtimes must be indicated or ONLY macatalyst-x64. -->
+		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
+
+		<OutputType>Exe</OutputType>
+		<RootNamespace>BedTimeStories</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Display name -->
+		<ApplicationTitle>BedTimeStories</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.bedtimestories</ApplicationId>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\gggg.jpg" />
+	  <None Remove="Resources\Images\gold.jpg" />
+	  <None Remove="Resources\Images\gold2.jpg" />
+	  <None Remove="Resources\Images\lapin_1.png" />
+	  <None Remove="Resources\Images\lapin_2.png" />
+	  <None Remove="Resources\Images\lapin_3.png" />
+	  <None Remove="Resources\Images\lapin_4.png" />
+	  <None Remove="Resources\Images\lapin_5.png" />
+	  <None Remove="Resources\Images\lapin_6.png" />
+	  <None Remove="Resources\Images\lapin_7.png" />
+	  <None Remove="Resources\Images\liela_1.png" />
+	  <None Remove="Resources\Images\liela_10.png" />
+	  <None Remove="Resources\Images\liela_11.png" />
+	  <None Remove="Resources\Images\liela_12.png" />
+	  <None Remove="Resources\Images\liela_13.png" />
+	  <None Remove="Resources\Images\liela_14.png" />
+	  <None Remove="Resources\Images\liela_15.png" />
+	  <None Remove="Resources\Images\liela_16.png" />
+	  <None Remove="Resources\Images\liela_17.png" />
+	  <None Remove="Resources\Images\liela_18.png" />
+	  <None Remove="Resources\Images\liela_19.png" />
+	  <None Remove="Resources\Images\liela_2.png" />
+	  <None Remove="Resources\Images\liela_20.png" />
+	  <None Remove="Resources\Images\liela_21.png" />
+	  <None Remove="Resources\Images\liela_22.png" />
+	  <None Remove="Resources\Images\liela_23.png" />
+	  <None Remove="Resources\Images\liela_24.png" />
+	  <None Remove="Resources\Images\liela_25.png" />
+	  <None Remove="Resources\Images\liela_26.png" />
+	  <None Remove="Resources\Images\liela_3.png" />
+	  <None Remove="Resources\Images\liela_4.png" />
+	  <None Remove="Resources\Images\liela_5.png" />
+	  <None Remove="Resources\Images\liela_6.png" />
+	  <None Remove="Resources\Images\liela_7.png" />
+	  <None Remove="Resources\Images\liela_8.png" />
+	  <None Remove="Resources\Images\liela_9.png" />
+	  <None Remove="Resources\Images\loup.jpg" />
+	  <None Remove="Resources\Images\oie_1.png" />
+	  <None Remove="Resources\Images\oie_2.png" />
+	  <None Remove="Resources\Images\oie_3.png" />
+	  <None Remove="Resources\Images\oie_4.png" />
+	  <None Remove="Resources\Images\oie_5.png" />
+	  <None Remove="Resources\Images\oie_6.png" />
+	  <None Remove="Resources\Images\oie_7.png" />
+	  <None Remove="Resources\Images\oie_8.png" />
+	  <None Remove="Resources\Images\tortue.jpg" />
+	  <None Remove="Resources\Images\vvvvv.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="goldPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="loupPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Menu.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="startpage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="tortuePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+</Project>
